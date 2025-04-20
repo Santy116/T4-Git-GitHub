@@ -24,4 +24,18 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Tolong isi catatan terlebih dahulu 💌");
     }
   }
+  function filterCatatan() {
+    const filterValue = document.getElementById("filterMood").value;
+    const items = document.querySelectorAll("#catatanContainer li");
+  
+    items.forEach((item) => {
+      if (filterValue === "semua" || item.textContent.startsWith(filterValue)) {
+        item.style.display = "list-item";
+      } else {
+        item.style.display = "none";
+      }
+    });
+  }
+  
+  
   
