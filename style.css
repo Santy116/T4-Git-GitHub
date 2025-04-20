@@ -19,4 +19,13 @@
     font-size: 0.9rem;
     color: #c08aa8;
   }
+  .filter-section {
+    margin-bottom: 1rem;
+  }
+  
+  .filter-section select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
   
