@@ -1,0 +1,15 @@
+.tanggal {
+    color: #a68a95;
+    font-style: italic;
+    margin-bottom: 1rem;
+  }
+  
+  .mood-section {
+    margin-bottom: 1rem;
+  }
+  
+  .mood-section select {
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+  }
