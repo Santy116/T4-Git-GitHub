@@ -8,3 +8,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     document.getElementById("tanggalHariIni").textContent = `📅 ${format}`;
   });
+
+  function simpanCatatan() {
+    const input = document.getElementById("noteInput");
+    const mood = document.getElementById("moodSelect").value;
+    const catatan = input.value.trim();
+  
+    if (catatan) {
+      const list = document.getElementById("catatanContainer");
+      const item = document.createElement("li");
+      item.textContent = `${mood} ${catatan}`;
+      list.prepend(item);
+      input.value = "";
+    } else {
+      alert("Tolong isi catatan terlebih dahulu 💌");
+    }
+  }
+  
