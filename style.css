@@ -39,4 +39,21 @@
     text-align: center;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
+
+.container {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  }
+  
+
+  body {
+    background-color: #fdf6f9;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+  }
+  
   
