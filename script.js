@@ -36,6 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+  document.addEventListener("DOMContentLoaded", () => {
+    // ... (yang sebelumnya sudah ada)
+  
+    // 🌟 Ucapan semangat random
+    const ucapanList = [
+      "Kamu hebat! 🌟",
+      "Semangat yaa, hari ini milikmu! ✨",
+      "Satu langkah kecil tetap berarti 💖",
+      "Tetap bersinar meski hari mendung 🌧️☀️",
+      "Bangga banget sama kamu 🫶"
+    ];
+  
+    const randomUcapan = ucapanList[Math.floor(Math.random() * ucapanList.length)];
+    document.getElementById("ucapanSemangat").textContent = randomUcapan;
+  });
   
   
   
