@@ -37,9 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
   document.addEventListener("DOMContentLoaded", () => {
-    // ... (yang sebelumnya sudah ada)
-  
-    // 🌟 Ucapan semangat random
+
     const ucapanList = [
       "Kamu hebat! 🌟",
       "Semangat yaa, hari ini milikmu! ✨",
@@ -50,6 +48,20 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const randomUcapan = ucapanList[Math.floor(Math.random() * ucapanList.length)];
     document.getElementById("ucapanSemangat").textContent = randomUcapan;
+  });
+  
+  function toggleDarkMode() {
+    const isDark = document.body.classList.toggle("dark");
+    localStorage.setItem("darkMode", isDark);
+  }
+  
+  document.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("darkMode");
+    if (saved === "true") {
+      document.body.classList.add("dark");
+      document.getElementById("darkToggle").checked = true;
+    }
+  
   });
   
   
