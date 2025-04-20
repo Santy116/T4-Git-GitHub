@@ -25,6 +25,18 @@
           </select>
         </div>
     
+        <div class="filter-section">
+            <label for="filterMood">Filter berdasarkan mood:</label>
+            <select id="filterMood" onchange="filterCatatan()">
+              <option value="semua">🌈 Semua</option>
+              <option value="😊">😊</option>
+              <option value="😔">😔</option>
+              <option value="😤">😤</option>
+              <option value="😴">😴</option>
+              <option value="🤩">🤩</option>
+            </select>
+          </div>
+          
         <textarea id="noteInput" placeholder="Hari ini aku merasa..."></textarea>
         <button onclick="simpanCatatan()">Simpan Catatan</button>
     
